@@ -1,8 +1,11 @@
 require 'rubygems'
 require 'watir-webdriver'
 
-def goto_the_puppy_adoption_site
-   @browser = Watir::Browser.new :firefox
+module AdoptionHelper
+
+
+  def goto_the_puppy_adoption_site
+   @browser = Watir::Browser.new :firefox   #chrome
    @browser.goto 'http://puppies.herokuapp.com'
  end
 
@@ -31,3 +34,5 @@ def verify_page_contains(text)
 def close_the_browser
    @browser.close
 end
+end
+

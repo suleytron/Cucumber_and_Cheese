@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'watir-webdriver'
-require_relative 'adoption_helper'
+require_relative 'adoption_helper'   #call to include a file in the same directory as the file it is required from.
+
 
 include AdoptionHelper
 
